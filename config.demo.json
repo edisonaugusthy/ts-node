@@ -1,0 +1,63 @@
+{
+	"application": {
+		"version": "1.2",
+		"jwt_secret": "asdad",
+		"jwt_exp": "1h",
+
+	},
+
+	"database": {
+		"cassandra_shore": {
+			"contact_points": "127.0.0.1:9042",
+			"keyspace": "",
+			"user": "",
+			"password": "",
+			"localDataCenter": ""
+		},
+	},
+
+
+	"log": {
+		"level": "info"
+	},
+
+
+	"email": {
+		"from": "",
+		"authkey": "",
+		"uri": "",
+		"websiteurl": "http://18.222.161.39",
+		"from_email": "",
+		"from_team": "",
+		"to_email": "s"
+	},
+	"mail_listner": {
+		"user": "",
+		"password": "",
+		"host": "",
+		"port": 993,
+		"tls": true,
+		"connTimeout": 100000,
+		"authTimeout": 15000,
+		"tlsOptions": {
+			"rejectUnauthorized": false,
+			"secureProtocol": "TLSv1_method"
+		},
+		"mailbox": "INBOX",
+		"searchFilter": [
+			"UNSEEN"
+		],
+		"fetchUnreadOnStart": true,
+		"mailParserOptions": {
+			"streamAttachments": true
+		},
+		"attachments": true,
+		"attachmentOptions": {
+			"directory": "attachments/"
+		}
+	},
+
+
+
+
+}
